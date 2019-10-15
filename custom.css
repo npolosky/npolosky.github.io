@@ -1,0 +1,404 @@
+	html, body
+	{
+		height: 100%;
+	}
+	
+	body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #334467;
+		font-family: 'Questrial', sans-serif;
+		font-size: 12pt;
+		color: #E5EEFF;
+	}
+	
+	
+	h1, h2, h3
+	{
+		margin: 0;
+		padding: 0;
+		color: #404040;
+	}
+	
+	p, ol, ul
+	{
+		margin-top: 0;
+	}
+	
+	ol, ul
+	{
+		padding: 0;
+		list-style: none;
+	}
+	
+	p
+	{
+		line-height: 180%;
+	}
+	
+	strong
+	{
+	}
+	
+	a
+	{
+		color: #16A085;
+	}
+	
+	a:hover
+	{
+		text-decoration: none;
+	}
+	
+
+	.container
+	{
+		margin: 0px auto;
+		width: 1200px;
+	}
+
+/*********************************************************************************/
+/* List Styles                                                                   */
+/*********************************************************************************/
+
+	ul.style1
+	{
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header-wrapper
+	{
+		overflow: hidden;
+		padding: 3em 0em 1em 0em;
+	}
+
+	#header
+	{
+		text-align: center;
+	}
+
+	.subheaderBlue h1
+	{
+		display: inline-block;
+		margin-bottom: 0.10em;
+		padding: 0.20em 0.9em;
+		font-size: 3.5em;
+		text-align: left;
+		text-decoration: none;
+		color: #FFF;
+	}
+	.subheaderWhite h1
+	{
+		display: inline-block;
+		margin-bottom: 0.10em;
+		padding: 0.20em 0.9em;
+		font-size: 3.5em;
+		text-align: left;
+		text-decoration: none;
+		color: #334467;
+	}
+		
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+	}
+	
+	#logo h1
+	{
+		display: inline-block;
+		margin-bottom: 0.10em;
+		padding: 0.20em 0.9em;
+		font-size: 3.5em;
+	}
+
+	#logo h2
+	{
+		display: inline-block;
+		margin-bottom: 0.20em;
+		padding: 0.2em 0.0em;
+		font-size: 1.5em;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	#logo span
+	{
+		padding-right: 0.5em;
+		text-transform: uppercase;
+		font-size: 0.90em;
+		color: rgba(255,255,255,1);
+	}
+
+	#logo span a
+	{
+		color: rgba(255,255,255,0.8);
+	}
+
+	#logo p
+	{
+		display: inline-block;
+		padding: 0em 10em 0em 0em;
+	}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu
+	{
+	}
+	
+	#menu ul
+	{
+		display: inline-block;
+		padding: 0em 2em;
+		text-align: center;
+	}
+	
+	#menu li
+	{
+		display: inline-block;
+	}
+	
+	#menu li a, #menu li span
+	{
+		display: inline-block;
+		padding: 1.3em 1.5em;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 0;
+		color: #FFF;
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+		background: #3E5A99;
+	}
+	
+	#menu .current_page_item a
+	{
+		color: #FFF;
+	}
+	
+/*********************************************************************************/
+/* Wrapper                                                                       */
+/*********************************************************************************/
+
+
+	.wrapperWhite
+	{
+		overflow: hidden;
+		padding: 0em 0em 5em 0em;
+		background: #E5EEFF;
+		color: #334467;
+		min-height: 100%;
+	}
+	.wrapperBlue
+	{
+		overflow: hidden;
+		padding: 0em 0em 5em 0em;
+		background: #334467;
+		color: #E5EEFF;
+		min-height: 100%;
+	}
+
+	#aboutWrapper
+	{
+		
+	}
+
+	#projectWrapper
+	{
+		/*overflow: hidden;
+		padding: 5em 0em;
+		text-align: center;*/
+	}
+
+	#pubsWrapper h1 h2
+	{
+		/*background: #E5EEFF;*/
+		color: #334467;
+	}
+	
+	#contactWrapper
+	{
+	}
+
+/*********************************************************************************/
+/* Welcome                                                                       */
+/*********************************************************************************/
+
+	#welcome
+	{
+		overflow: hidden;
+		width: 1200px;
+		padding: 2em 0px 0em 0px;
+		text-align: center;
+	}
+	
+	#welcome .content
+	{
+		padding: 0em 8em;
+	}
+	
+		#welcome .image
+		{
+			display: block;
+			padding-top: 3em;
+			border: none;
+		}
+
+	#welcome .title h2
+	{
+		color: #FFF;
+	}
+	
+	#welcome a,
+	#welcome strong
+	{
+		color: #C6C2C4;
+	}
+
+/*********************************************************************************/
+/* Page                                                                          */
+/*********************************************************************************/
+
+	#page-wrapper
+	{
+		overflow: hidden;
+		padding: 3em 0em 0em 0em;
+		text-align: center;
+	}
+
+	.subpage-wrapperBlue
+	{
+		overflow: hidden;
+		padding: 0em 0em 0em 4em;
+		text-align: left;
+	}
+	.subpage-wrapperBlue a,
+	.subpage-wrapperBlue strong
+	{
+		color: #C6C2C4;
+	}
+	.subpage-wrapperBlue p
+	{
+		display: inline-block;
+		padding: 0em 10em 0em 0em;
+	}
+	.subpage-wrapperBlue h2
+	{
+		display: inline-block;
+		margin-bottom: 0.20em;
+		padding: 0.2em 0.0em;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: #FFF;
+		/*color: #334467;*/
+	}
+
+	.subpage-wrapperBlue ul
+	{
+		padding: 0em 10em 0em 2em;
+	}
+
+	.subpage-wrapperWhite
+	{
+		overflow: hidden;
+		padding: 0em 0em 0em 4em;
+		text-align: left;
+	}
+	.subpage-wrapperWhite a,
+	.subpage-wrapperWhite strong
+	{
+		color: #102040;
+	}
+	.subpage-wrapperWhite p
+	{
+		display: inline-block;
+		padding: 0em 10em 0em 0em;
+	}
+	.subpage-wrapperWhite h2
+	{
+		display: inline-block;
+		margin-bottom: 0.20em;
+		padding: 0.2em 0.0em;
+		font-size: 1.5em;
+		text-decoration: none;
+		/*color: #FFF;*/
+		color: #334467;
+	}
+
+	.subpage-wrapperWhite ul
+	{
+		padding: 0em 10em 0em 2em;
+	}
+
+	#page
+	{
+	}
+
+/*********************************************************************************/
+/* Image                                                                         */
+/*********************************************************************************/
+
+	.headshot img
+	{
+		padding: 3em 0em 0em 0em;
+		max-height: 300px;
+		display: block;
+		margin: 0 auto;
+		width: auto;
+		position: relative;
+	    overflow: hidden;
+		border-radius: 100%;
+		/*border: 2px solid rgba(0,0,0,.1);*/
+	}
+
+	.image-cropper {
+	    width: 100px;
+	    height: 100px;
+	    position: relative;
+	    overflow: hidden;
+	    border-radius: 50%;
+	}
+	.profile-pic {
+	  display: inline;
+	  margin: 0 auto;
+	  margin-left: -25%; //centers the image
+	  height: 100%;
+	  width: auto;
+	}
+
+	.badge {
+	    display: block;
+	   
+	    padding: 0;
+	    font-size: 12px;
+	    font-weight: lighter !important;
+	    line-height: 50px;
+	    color: #fff !important;
+	    text-align: center;
+	    white-space: nowrap;
+	    /*vertical-align: baseline;*/
+	    /*background-color: #d73d33;*/
+	    border-radius:50px;
+	    position: relative;
+	    top: -3px;
+	    height: 50px;
+	    width: 50px;
+	}
