@@ -25,7 +25,7 @@ Released   : 20140215
 </head>
 <body>
 <div id="headshot-wrapper" class="headshot">
-	<img src="images/headshot2.png" class="profile-pic"/>
+	<img src="images/headshot3.jpg" class="profile-pic"/>
 </div>
 <div id="header-wrapper">
 	<div id="header" class="container">
@@ -48,24 +48,44 @@ Released   : 20140215
 		<h1>About Me</h1>
 	</div>
 	<div id="aboutPage" class="subpage-wrapperWhite">
-		<p> I am currently studying computer science as an MS student at <a href="https://www.cics.umass.edu/" target="_blank">University of Massachusetts at Amherst</a> and working part time as an Associate Computer Scientist/Engineer in the Marconi-Rosenblatt AI/ML Innovation Lab at <a href="http://www.androcs.com/wp/" target="_blank">ANDRO Computational Solutions LLC</a>, a defense contracting firm in Rome, NY. In May of 2017 I graduated from Cornell University with a BS in Computer Science and worked full time at ANDRO for about two and a half years before beginning at UMass. At work, I have been a contributor on projects involving automatic modulation classification and multi-task learning for signal intelligence; and I am currently the Technical Lead on a project employing reinforcement learning for autonomous UAVs. At school, I have done research through an Independent Study with <a href="https://groups.cs.umass.edu/shlomo/" target="_blank">Dr. Shlomo Zilberstein</a> on safe AI methods for avoiding dead ends in online planning and RL. Currently, I am working with Professors <a href="https://www.cics.umass.edu/people/fiterau-brostean-ina" target="_blank"> Ina Fiterau</a> & <a href="http://www.inf.ufrgs.br/~bsilva/" target="_blank"> Bruno Castro da Silva</a> on a Master's project involving the use of constrained optimization for safe offline reinforcement learning.</p>
+		<p> I am currently employed as an Associate Computer Scientist/Engineer III in the 
+			Marconi-Rosenblatt AI/ML Innovation Lab at <a href="http://www.androcs.com/wp/" target="_blank">ANDRO Computational 
+			Solutions LLC</a>, a defense contracting firm in Rome, NY. At ANDRO, I lead a team of engineers working to build a 
+			vision-based collision avoidance and navigation subsystem for autonomous UAV applications. Our solution combines
+			traditional vision-based autonomy components with machine learning based perception modules - reaping the benefits
+			of robustness and generalization from both approaches. The subsystem is powered by optimized CUDA C++ code and 
+			hardware accelerated vision models deployed upon an embedded NVIDIA Jetson platform, using TensorRT for further 
+			model optimization. 
+			<br><br>
+			In 2021 I graduated with a Masters in Computer Science from <a href="https://www.cics.umass.edu/" target="_blank">University of 
+			Massachusetts at Amherst</a>, focusing on reinforcement learning (RL). During my time at UMass, I was fortunate enough to conduct research with 
+			<a href="https://groups.cs.umass.edu/shlomo/" target="_blank">Dr. Shlomo Zilberstein</a> on safe AI methods for 
+			avoiding "dead ends" in online planning and RL. My Masters work culminated with my research on offline reinforcement learning
+			methods for learning constrained MDPs, during which I was advised by Professors 
+			<a href="https://www.cics.umass.edu/people/fiterau-brostean-ina" target="_blank"> Ina Fiterau</a> & 
+			<a href="http://www.inf.ufrgs.br/~bsilva/" target="_blank"> Bruno Castro da Silva</a>. Our work, "<em>Constrained Offline Policy 
+			Optimization</em>", introduces a novel constrained policy projection algorithm, which, given a reward optimal policy, will find 
+			the cost-feasible policy that is closest to the provided reward maximizing policy. This work will be featured in <u>ICML 2022</u>.
+			<br><br>
+			In May of 2017 I graduated from Cornell University with a BS in Computer Science and thereafter worked full time at ANDRO,
+			working on projects involving automatic modulation classification and multi-task learning for signal intelligence prior to 
+			working on my current autonomy project.</p>
 		<div id = "researchList">
 			<p>Some of my research interests include:</p>
 			<ul style="list-style-type:disc;">
-				<li> Reinforcement Learning </li>
-				<li> Artificial Intelligence & Automated Probabilistic Planning </li>
+				<li> Sample Efficient Reinforcement Learning </li>
+				<li> Constrained Reinforcement Learning </li>
 				<li> Convex Analysis/Optimization </li>
-				<li> Signal Processing </li>
 				<li> Autonomous UAV </li>
-				<li> Machine Learning </li>
+				<li> Vision-based Navigation </li>
 			</ul>
 		</div>
 		<div id = "selfStudyList">
 			<p>Some of my self-study interests include:</p>
 			<ul style="list-style-type:disc;">
 				<li> Mathematical Analysis, Fourier Analysis, & Functional Analysis </li>
-				<li> Behavioral Economics </li>
-				<li> Psychology </li>
+				<li> Philosophy </li>
+				<li> Nutrition & Health </li>
 			</ul>
 		</div>
 	</div>
@@ -77,11 +97,15 @@ Released   : 20140215
 	<div id="projectsPage" class="subpage-wrapperBlue">
 		<!-- <p> What I am currently working on ... </p> -->
 		<h2>Deep Reinforcement Learning based Autonomous Unmanned Aeriel Vehicles</h2>
-		<p>At ANDRO, our team was recently awarded the opportunity to conduct research towards building an autonomous UAV for the Navy. In our proposed approach, we intend to use vision-based, deep reinforcement learning agents to aid in navigating a UAV through tactical environments in GPS denied or lost data link scenarios. Additionally, to enhance human-machine teaming, we hope to develop and deploy vision-based natural user interfaces (NUIs) which will allow humans to interface with the UAV via gestures and chromatic symbols.</p>
+		<p>At ANDRO, I lead a team of engineers working to build a vision-based collision avoidance and navigation subsystem for 
+			autonomous UAV application for the US Navy. We use vision-based autonomy algorithms to aid in navigating a UAV through tactical environments in GPS denied or lost data link scenarios. 
+			Additionally, to enhance human-machine teaming, we have developed vision-based natural user interfaces (NUIs) which will allow humans to interface with the UAV via natural gestures (hand signals) and chromatic symbols.</p>
+		<h2>Constrained Offline Policy Optimization</h2>
+		<p>In this work we introduce Constrained Offline Policy Optimization (COPO), an offline policy optimization algorithm for learning in MDPs with cost constraints. COPO is built upon a novel offline cost-projection method, which we formally derive and analyze. Our method improves upon the state-of-the-art in offline constrained policy optimization by explicitly accounting for distributional shift and by offering non-asymptotic confidence bounds on the cost of a policy. These formal properties are superior to those of existing techniques, which only guarantee convergence to a point estimate. We formally analyze our method and empirically demonstrate that it achieves state-of-the-art performance on discrete and continuous control problems, while offering the aforementioned improved, stronger, and more robust theoretical guarantees.</p>
+		<h2> Mitigating Overestimation and Distributional Shift in Offline Reinforcement Learning </h2>
+		<p>The offline reinforcement learning setting - learning policies from a static data set - introduces challenges associated with the inability to sample data from the learned policy. Among such challenges, overestimation of state-action values and distributional shift are the most detrimental to learning policies that perform well once deployed. In this work, we introduce a novel offline learning algorithm that directly addresses both overestimation and distributional shift, without restricting value estimates to the data distribution. Our algorithm, entitled Initial and Semi-Implicit Q-Learning (ISIQL), learns using value targets constructed from a mixture of estimates from both the data distribution and the current policy's action distribution, thereby allowing for policy improvement outside of the behavior distribution when possible. Our value objective additionally incorporates an initial state-action value term, which we show, allows for mitigation of distributional shift. We motivate the use of these learning components by connecting to prior work, and show various ways a stochastic policy may be extracted from the learned value functions. Lastly, we show that the ISIQL algorithm achieves state-of-the-art performance on online MuJoCo benchmark tasks and offline D4RL data sets, most notably offering a 10% performance gain in offline locomotion and maze tasks. </p>
 		<h2>Intelligent Signal Detector and Classifer</h2>
 		<p>At ANDRO, our team is in the process of devloping a machine learning based RF signal detector and classifier for the Army. The envisioned finished final product should aid EM spectrum analysts in signal identification by providing a multitude of estimated signal characteristics to the user simultaneously. Our approach builds off of our automatic modulation classification (AMC) technology by extending the solution to a multi-task learning paradigm.</p>
-		<h2> Online Probabilistic Planning with Dead Ends </h2>
-		<p> Through an Independent Study at UMass with Dr. Shlomo Zilberstein, I am conducting research on how to enable agents to plan, in real-time, a course of action which avoids exhibiting unsafe behavior. We are particularly concerned with problems in which unsafe behavior may be represented as a time-varying set of state-action pairs which lead to dead-ends. This characterization allows for complex problem domains in which an action that is admissible in a given state at the current time may not be admissible in the same state at a future time. </p>
 	</div>
 </div>
 <div id="pubs" class="wrapperWhite">
@@ -98,6 +122,8 @@ Released   : 20140215
 		<div id="conferences">
 			<h2>Conferences</h2>
 			<ul style="list-style-type:disc;">
+				<li> <strong>N. Polosky</strong>, B. C. da Silva, I. Fiterau, J. Jagannath, “Constrained Offline Policy Optimization,” in International Conference on Machine Learning (ICML), Baltimore, MD, USA, July 2022. </li>
+				<li> <strong>N. Polosky</strong>, T. Gwin, S. Furman, P. Barhanpurkar, J. Jagannath, “Machine Learning Subsystem for Autonomous Collision Avoidance on a small UAS with Embedded GPU,” in Proc. of 19th IEEE Consumer Communications & Networking Conference (CCNC), Virtual, January 2022. </li>
 				<li> J. Jagannath, <strong>N. Polosky</strong>, D. O’Connor, L. Theagarajan, B. Sheaffer, S. Foulke, P. Varshney, “Artificial Neural Network based Automatic Modulation Classifier for Software Defined Radios,” in Proc. of IEEE International Conference on Communications (ICC), Kansas City, MO, USA, May 2018. </li>
 				<li> <strong>N. Polosky</strong>, J. Jagannath, D. O'Connor, H. Saarinen, S. Foulke, “Artificial Neural Network with Electroencephalogram Sensors for Brainwave Interpretation: Brain-Observer-Indicator Development Challenges,” in Proc. of 13th International Conference & Expo on Emerging Technologies for a Smarter World (CEWIT), Stony Brook, NY, USA, November 2017. </li>
 				<li> J. Jagannath, D. O'Connor, <strong>N. Polosky</strong>, B. Sheaffer, L. N. Theagarajan, S. Foulke, P. K. Varshney, S. P. Reichhart, "Design and Evaluation of Hierarchical Hybrid Automatic Modulation Classifier using Software Defined Radios," in in Proc. of IEEE Annual Computing and Communication Workshop and Conference (CCWC), Las Vegas, NV, USA, January 2017. </li>
